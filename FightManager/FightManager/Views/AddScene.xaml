@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FightManager.Views.AddScene"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             NavigationPage.HasNavigationBar="True"
+             BackgroundColor="Transparent">
+    <!--<ContentPage.BindingContext>
+        <vm:AddSceneViewModel/>
+    </ContentPage.BindingContext>-->
+    
+    <ContentPage.Content>
+        <Grid>
+            <Button BackgroundColor="Transparent"/>
+            <Frame  Margin="40,80"
+                    BackgroundColor="{StaticResource MainDark}"
+                    CornerRadius="15"
+                    Padding="0"
+                    BorderColor="{StaticResource CommonTextColor}">
+                <Grid>
+                    <ScrollView>
+                        <StackLayout    Padding="15">
+                            <Label  Text="Создание сцены"
+                                    Style="{StaticResource CommonText}"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Margin="0,0,0,10"/>
+                            <Label  Text="Название"
+                                    Style="{StaticResource CommonText}"/>
+                            <Entry  />
+                            <Label  Text="Сеттинг"
+                                    Style="{StaticResource CommonText}"/>
+                            <Picker ItemsSource="{Binding scenesVM.Settings}"
+                                    ItemDisplayBinding="{Binding Title}"/>
+                            <Button Style="{StaticResource DefaultButton}"
+                                    Text="Добавить сцену"
+                                    Margin="0,0,0,20"/>
+
+                            <Label  Text="Создание сеттинга"
+                                    Style="{StaticResource CommonText}"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Margin="0,0,0,10"/>
+                            <Label  Text="Название"
+                                    Style="{StaticResource CommonText}"/>
+                            <Entry  />
+                            <Button Style="{StaticResource DefaultButton}"
+                                    Text="Добавить сеттинг"/>
+
+                        </StackLayout>
+                    </ScrollView>
+                    <Button Text="X"
+                            Command="{Binding NavigateBackTo}"
+                            x:Name="btnClose"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Padding="0"
+                            WidthRequest="{Binding Height, Source={x:Reference btnClose}}"
+                            Style="{StaticResource LinkButton}"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

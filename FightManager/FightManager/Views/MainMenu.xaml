@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FightManager.Views.MainMenu"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             BackgroundColor="{DynamicResource MainDark}">
+
+    <ContentPage.BindingContext>
+        <vm:MainMenuViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
+            Padding="10"
+        >
+            <Button
+                Text="Бестиарий"
+                Style="{DynamicResource Key=DefaultButton}"
+            />
+            <Button
+                Text="Сцены"
+                Style="{DynamicResource Key=DefaultButton}"
+                Command="{Binding NavigateToScenes}"
+            />
+            <Button
+                Text="Последний моб"
+                Style="{DynamicResource Key=LinkButton}"
+            />
+            <Button
+                Text="Последняя сцена"
+                Style="{DynamicResource Key=LinkButton}"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

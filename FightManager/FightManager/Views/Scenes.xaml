@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FightManager.Views.Scenes"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             NavigationPage.HasNavigationBar="True"
+             Title="Боевые сцены">
+    <ContentPage.BindingContext>
+        <vm:ScenesViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource MainMedium}">
+
+            <Grid BackgroundColor="{StaticResource MainDark}"
+                  Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Style="{StaticResource LinkButton}"
+                            x:Name="btnBack"
+                            Command="{Binding NavigateBackToMainMenu}"
+                            Text="&lt;"
+                            FontSize="32"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Start"
+                            WidthRequest="{Binding Height, Source={x:Reference btnBack}}"
+                            Grid.Column="0"/>
+
+                    <Label  Text="Боевые сцены"
+                            Style="{StaticResource CommonText}"
+                            FontSize="24"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            Grid.Column="1"/>
+
+                    <Button Style="{StaticResource LinkButton}"
+                            x:Name="btnAdd"
+                            Command="{Binding NavigateToAddScene}"
+                            Text="+"
+                            FontSize="32"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="End"
+                            WidthRequest="{Binding Height, Source={x:Reference btnAdd}}"
+                            Grid.Column="2"/>
+                </Grid>
+
+                <SearchBar Grid.Row="1"
+                           Placeholder="Поиск сцены"/>
+
+            </Grid>
+
+            <ScrollView>
+                <ListView   ItemsSource="{Binding Scenes}"
+                            HasUnevenRows="True"
+                            SeparatorColor="Transparent"
+                            IsPullToRefreshEnabled="false"
+                            RefreshControlColor="{StaticResource MainMedium}"
+                            SelectionMode="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ContentView>
+                                    <Frame BackgroundColor="{StaticResource MainDark}"
+                                       CornerRadius="10"
+                                       Margin="10,5"
+                                       Padding="15">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="6*"/>
+                                                <ColumnDefinition Width="1*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <ScrollView Orientation="Horizontal" Grid.Column="0">
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label Text="{Binding Title}"
+                                                   VerticalOptions="Center"
+                                                   FontSize="18"
+                                                   Style="{StaticResource CommonText}"/>
+
+                                                    <Label Text="{Binding Setting.Title}"
+                                                    VerticalOptions="Center"
+                                                   FontSize="18"
+                                                    Style="{StaticResource CommonText}"
+                                                    TextColor="{StaticResource MainMedium}"/>
+                                                </StackLayout>
+                                            </ScrollView>
+                                            
+                                            <Button Grid.Column="1"
+                                                x:Name="btnMore"
+                                                CornerRadius="50"
+                                                Text="..."
+                                                FontSize="18"
+                                                Style="{StaticResource DefaultButton}"
+                                                VerticalOptions="End"
+                                                HorizontalOptions="Center"
+                                                WidthRequest="{Binding Height, Source={x:Reference btnMore}}"/>
+                                        </Grid>
+                                    </Frame>
+                                </ContentView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
