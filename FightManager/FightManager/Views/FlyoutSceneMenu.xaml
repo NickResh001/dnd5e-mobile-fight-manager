@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             x:Class="FightManager.Views.FlyoutSceneMenu"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Transparent">
+
+    <ContentPage.BindingContext>
+        <vm:FlyoutSceneMenuViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <Grid>
+            <Button BackgroundColor="Transparent"
+                    Command="{Binding NavigateBackTo}"/>
+            <Frame VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   BackgroundColor="{StaticResource MainDark}"
+                   Padding="15"
+                   BorderColor="{StaticResource MainLight}"
+                   >
+                <StackLayout Orientation="Vertical"
+                             Spacing="15">
+                <Label FontSize="24" TextColor="{StaticResource MainLight}"
+                       Text="← В главное меню"/>
+                <Label FontSize="24" TextColor="{StaticResource MainLight}"
+                       Text="← К сценам"/>
+                <Label FontSize="24" TextColor="{StaticResource MainLight}"
+                       Text="← К сохранениям"/>
+                <Label FontSize="24" TextColor="{StaticResource MainLight}"
+                       Text="Сохранить"/>
+                <Label FontSize="24" TextColor="{StaticResource MainLight}"
+                       Text="Сохранить как ..."/>
+                <Label FontSize="24" TextColor="{StaticResource MainLight}"
+                       Text="Переименовать"/>
+                <!--<Button Style="{StaticResource LinkButton}" Text="← В главное меню" />
+                <Button Style="{StaticResource LinkButton}" Text="← К сценам"/>
+                <Button Style="{StaticResource LinkButton}" Text="← К сохранениям сцены"/>
+                <Line BackgroundColor="{StaticResource MainLight}"/>
+                <Button Style="{StaticResource LinkButton}" Text="Сохранить"/>
+                <Button Style="{StaticResource LinkButton}" Text="Сохранить как ..."/>
+                <Button Style="{StaticResource LinkButton}" Text="Переименовать"/>-->
+            </StackLayout>
+            </Frame>
+            
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

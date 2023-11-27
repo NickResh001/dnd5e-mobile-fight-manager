@@ -2308,3 +2308,6 @@ com.google.android.material.animation.TransformationCallback;com.google.android.
 Google.Common.Util.Concurrent.IListenableFuture, Xamarin.Google.Guava.ListenableFuture;com.google.common.util.concurrent.ListenableFuture
 Google.Common.Util.Concurrent.IListenableFuture;com.google.common.util.concurrent.ListenableFuture
 com.google.common.util.concurrent.ListenableFuture;com.google.common.util.concurrent.ListenableFuture
+XamEffects.Droid.Renderers.BorderViewRenderer, XamEffects.Droid;crc6450eb4ad7d396ddb2.BorderViewRenderer
+XamEffects.Droid.Renderers.BorderViewRenderer;crc6450eb4ad7d396ddb2.BorderViewRenderer
+xameffects.droid.renderers.BorderViewRenderer;crc6450eb4ad7d396ddb2.BorderViewRenderer

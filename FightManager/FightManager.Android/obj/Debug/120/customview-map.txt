@@ -33,6 +33,7 @@ paths;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\
 resources;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\values\attrs.xml
 resources;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\values\strings.xml
 resources;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\values\styles.xml
+resources;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\58\jl\res\values\strings.xml
 resources;obj\Debug\120\res\values\colors.xml
 resources;obj\Debug\120\res\values\styles.xml
 set;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\anim\enterfromleft.xml
@@ -40,6 +41,7 @@ set;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\Fi
 set;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\anim\exittoleft.xml
 set;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\anim\exittoright.xml
 string;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\values\strings.xml
+string;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\58\jl\res\values\strings.xml
 style;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\values\styles.xml
 style;obj\Debug\120\res\values\styles.xml
 translate;D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager.Android\obj\Debug\120\lp\54\jl\res\anim\enterfromleft.xml

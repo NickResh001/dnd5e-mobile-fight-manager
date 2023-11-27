@@ -171,10 +171,33 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "XamEffects/1.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "FightManager/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "XamEffects": "1.6.3",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196"
         },
@@ -356,10 +379,33 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "XamEffects/1.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "FightManager/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "XamEffects": "1.6.3",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196"
         },
@@ -541,10 +587,33 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "XamEffects/1.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "FightManager/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "XamEffects": "1.6.3",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196"
         },
@@ -726,10 +795,33 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "XamEffects/1.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.77107"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/XamEffects.dll": {
+            "related": ".iOS.pdb;.pdb"
+          },
+          "lib/Xamarin.IOS/XamEffects.iOS.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "FightManager/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "XamEffects": "1.6.3",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196"
         },
@@ -1048,6 +1140,31 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "XamEffects/1.6.3": {
+      "sha512": "XcoxG/ugnmrh+j7q0dhFaU8ouUIIFrBwJvc0FtXrhusvSNov5L8gtynf0hfiu3Ey1Z3R39J1qp8tYCovhuJFRQ==",
+      "type": "package",
+      "path": "xameffects/1.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XamEffects.Droid.dll",
+        "lib/MonoAndroid/XamEffects.Droid.pdb",
+        "lib/MonoAndroid/XamEffects.dll",
+        "lib/MonoAndroid/XamEffects.pdb",
+        "lib/MonoTouch/XamEffects.dll",
+        "lib/MonoTouch/XamEffects.iOS.dll",
+        "lib/MonoTouch/XamEffects.iOS.pdb",
+        "lib/MonoTouch/XamEffects.pdb",
+        "lib/Xamarin.IOS/XamEffects.dll",
+        "lib/Xamarin.IOS/XamEffects.iOS.dll",
+        "lib/Xamarin.IOS/XamEffects.iOS.pdb",
+        "lib/Xamarin.IOS/XamEffects.pdb",
+        "lib/netstandard1.0/XamEffects.dll",
+        "lib/netstandard1.0/XamEffects.pdb",
+        "xameffects.1.6.3.nupkg.sha512",
+        "xameffects.nuspec"
+      ]
+    },
     "FightManager/1.0.0": {
       "type": "project",
       "path": "../FightManager/FightManager.csproj",
@@ -1057,6 +1174,7 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "FightManager >= 1.0.0",
+      "XamEffects >= 1.6.3",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196"
     ]
@@ -1103,6 +1221,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "XamEffects": {
+            "target": "Package",
+            "version": "[1.6.3, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"

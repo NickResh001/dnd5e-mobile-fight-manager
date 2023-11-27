@@ -11,7 +11,8 @@
     
     <ContentPage.Content>
         <Grid>
-            <Button BackgroundColor="Transparent"/>
+            <Button BackgroundColor="Transparent"
+                    Command="{Binding NavigateBackTo}"/>
             <Frame  Margin="40,80"
                     BackgroundColor="{StaticResource MainDark}"
                     CornerRadius="15"

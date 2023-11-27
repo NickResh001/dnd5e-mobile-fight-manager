@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UTDMKcwMuRjB+m1bLCGOjqjCAqGSckEqsKOC/GFxaCwCWnKmaX3cdTW/GQ8dtifmpzLG6NjBXqoUzXwMhLMz9w==",
+  "dgSpecHash": "AKAUX8Jo0P6H2X0uqxg/V2UJPf4JHdKbQTawV+IxapdArCcwnr4F2we4hRG6KDLTbKSj4FcgmHAhYvqt/Ox21g==",
   "success": true,
   "projectFilePath": "D:\\Прочее\\ИГЭУдз\\4ый курс 1\\Мобилки\\FightManager\\FightManager\\FightManager.Android\\FightManager.Android.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,8 @@
     "C:\\Users\\User\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\xameffects\\1.6.3\\xameffects.1.6.3.nupkg.sha512"
   ],
   "logs": []
 }

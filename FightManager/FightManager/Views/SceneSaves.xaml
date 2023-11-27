@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FightManager.Views.SceneSaves"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             NavigationPage.HasNavigationBar="False">
+    
+    <!--<ContentPage.BindingContext>
+        <vm:SceneSavesViewModel/>
+    </ContentPage.BindingContext>-->
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource MainMedium}">
+            <Grid BackgroundColor="{StaticResource MainDark}"
+                  Padding="5">
+
+                <StackLayout Orientation="Horizontal">
+                    <Button Style="{StaticResource LinkButton}"
+                            x:Name="btnBack"
+                            Command="{Binding NavigateBackTo}"
+                            ImageSource="BackButton.png"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            WidthRequest="{Binding Height, Source={x:Reference btnBack}}"/>
+
+                    <Label  Text="{Binding CurrentScene.Title}"
+                        Style="{StaticResource CommonText}"
+                        FontSize="24"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Start"/>
+
+                    <Frame BackgroundColor="Transparent">
+                        
+                    </Frame>
+
+                </StackLayout>
+            </Grid>
+
+            <ScrollView VerticalOptions="Start">
+                <ListView   ItemsSource="{Binding SceneSaves}"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Center"
+                            HasUnevenRows="True"
+                            SeparatorColor="Transparent"
+                            IsPullToRefreshEnabled="false"
+                            RefreshControlColor="{StaticResource MainMedium}"
+                            SelectionMode="None"
+                            x:Name="SceneSaveList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell x:Name="Item">
+                                <ContentView>
+                                    <Frame BackgroundColor="{StaticResource MainDark}"
+                                       CornerRadius="10"
+                                       Margin="10,5"
+                                       Padding="15">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1*"/>
+                                                <ColumnDefinition Width="6*"/>
+                                                <ColumnDefinition Width="1*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Button Grid.Column="0"
+                                                x:Name="btnRename"
+                                                CornerRadius="50"
+                                                ImageSource="RenameButton.png"
+                                                Style="{StaticResource LinkButton}"
+                                                VerticalOptions="End"
+                                                HorizontalOptions="Center"
+                                                WidthRequest="{Binding Height, Source={x:Reference btnRename}}"/>
+
+                                            <ScrollView Orientation="Horizontal" Grid.Column="1">
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label Text="{Binding Title}"
+                                                   VerticalOptions="Center"
+                                                   FontSize="18"
+                                                   Style="{StaticResource CommonText}"/>
+
+                                                    <Label Text="{Binding CreationDate}"
+                                                    VerticalOptions="Center"
+                                                    FontSize="18"
+                                                    Style="{StaticResource CommonText}"
+                                                    TextColor="{StaticResource MainMedium}"/>
+                                                </StackLayout>
+                                            </ScrollView>
+
+                                            <Button Grid.Column="2"
+                                                    x:Name="btnGoOn"
+                                                    CornerRadius="50"
+                                                    ImageSource="ForwardButton.png"
+                                                    Style="{StaticResource LinkButton}"
+                                                    VerticalOptions="End"
+                                                    HorizontalOptions="Center"
+                                                    WidthRequest="{Binding Height, Source={x:Reference btnGoOn}}"
+                                                    BindingContext="{Binding Source={x:Reference SceneSaveList}, Path=BindingContext}"
+                                                    Command="{Binding NavigateToSave}"
+                                                    CommandParameter="{Binding Source={x:Reference Item}, Path=BindingContext}"/>
+                                        </Grid>
+                                    </Frame>
+                                </ContentView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

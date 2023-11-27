@@ -17,7 +17,7 @@
             <Style TargetType="Button" x:Key="BaseCommonButton">
                 <Setter Property="Padding" Value="10,0"/>
             </Style>
-            
+
             <Style TargetType="Button" x:Key="DefaultButton" BasedOn="{StaticResource BaseCommonButton}">
                 <Setter Property="CornerRadius" Value="10"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource MainMedium}"/>
@@ -101,6 +101,9 @@
             </Style>
             <Style TargetType="Picker">
                 <Setter Property="TextColor" Value="{StaticResource MainLight}"/>
+            </Style>
+            <Style TargetType="CheckBox">
+                <Setter Property="Color" Value="{StaticResource PressedLight}"/>
             </Style>
             
         </ResourceDictionary>

@@ -40,13 +40,24 @@ namespace FightManager.ViewModels
 
         public ICommand NavigateBackToMainMenu { get; }
         public ICommand NavigateToAddScene { get; }
+		public ICommand NavigateToSceneSaves { get; }
         public ScenesViewModel()
         {
             NavigateBackToMainMenu = new Command((object parameter) => Navigation.PopAsync());
-            NavigateToAddScene = new Command((object parameter) => Navigation.PushModalAsync(new AddScene(this)));
+            NavigateToAddScene = new Command(() => Navigation.PushModalAsync(new AddScene(this)));
+			NavigateToSceneSaves = new Command(NavToSceneSaves);
 
 			HardcodeInit();
         }
+
+		private void NavToSceneSaves(object parameter)
+		{
+			var scene = parameter as SceneDTO;
+			if (scene != null)
+            {
+                Navigation.PushAsync(new SceneSaves(scene));
+            }
+		}
 
 		public void HardcodeInit()
 		{

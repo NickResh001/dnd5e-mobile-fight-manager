@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             x:Class="FightManager.Views.SceneManager"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <vm:SceneManagerViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource MainMedium}">
+            <Grid BackgroundColor="{StaticResource MainDark}"
+                  Padding="5">
+
+                <StackLayout Orientation="Horizontal">
+                    <Button Style="{StaticResource LinkButton}"
+                            x:Name="btnBack"
+                            Command="{Binding NavigateToFlyoutMenu}"
+                            ImageSource="BurgerButton.png"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            WidthRequest="{Binding Height, Source={x:Reference btnBack}}"/>
+
+                    <Label  Text="{Binding CurrentScene.Title}"
+                        Style="{StaticResource CommonText}"
+                        FontSize="24"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Start"/>
+
+                    <Button Style="{StaticResource LinkButton}"
+                            x:Name="btnMore"
+                            Command="{Binding NavigateToModalSceneMenu}"
+                            ImageSource="MoreButton.png"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            WidthRequest="{Binding Height, Source={x:Reference btnMore}}"/>
+
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -16,3 +16,8 @@ D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightM
 D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\MainMenu.xaml.g.cs
 D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\Scenes.xaml.g.cs
 D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\AddScene.xaml.g.cs
+D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\CustomControls\CommonButton.xaml.g.cs
+D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\SceneSaves.xaml.g.cs
+D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\ModalSceneMenu.xaml.g.cs
+D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\SceneManager.xaml.g.cs
+D:\Прочее\ИГЭУдз\4ый курс 1\Мобилки\FightManager\FightManager\FightManager\obj\Debug\netstandard2.0\Views\FlyoutSceneMenu.xaml.g.cs

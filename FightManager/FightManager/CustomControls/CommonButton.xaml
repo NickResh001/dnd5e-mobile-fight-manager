@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
+             x:Class="FightManager.CustomControls.CommonButton"
+             x:Name="this">
+    <Grid BindingContext="{x:Reference this}"
+          BackgroundColor="{Binding _BorderColor}"
+          xe:Commands.Tap="{Binding _TapCommand}"
+          xe:Commands.TapParameter="{Binding _TapCommandParameter}"
+          xe:Commands.LongTap="{Binding _LongTapCommand}"
+          xe:Commands.LongTapParameter="{Binding _LongTapCommandParameter}"
+          xe:TouchEffect.Color="{Binding _BorderColorTappped}"
+          >
+        <Frame BackgroundColor="{Binding _MainColor}"
+               xe:TouchEffect.Color="{Binding _MainColorTapped}"
+               VerticalOptions="Fill"
+               HorizontalOptions="Fill">
+            <Label Text="{Binding _Text}"
+                   TextColor="{Binding _TextColor}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="{Binding _FontSize}"
+                   FontFamily="{Binding _FontFamily}"/>
+        </Frame>
+    </Grid>
+</ContentView>

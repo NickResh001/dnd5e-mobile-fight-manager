@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FightManager.ViewModels"
+             x:Class="FightManager.Views.ModalSceneMenu"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Transparent">
+
+    <ContentPage.BindingContext>
+        <vm:ModalSceneMenuViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <Grid>
+            <Button BackgroundColor="Transparent"
+                    Command="{Binding NavigateBackTo}"/>
+            <Frame  Margin="40,80"
+                    BackgroundColor="{StaticResource MainDark}"
+                    CornerRadius="15"
+                    Padding="0"
+                    BorderColor="{StaticResource CommonTextColor}">
+                <Grid>
+                    <StackLayout>
+                        <Button Text="X"
+                            Command="{Binding NavigateBackTo}"
+                            x:Name="btnClose"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Padding="0"
+                            WidthRequest="{Binding Height, Source={x:Reference btnClose}}"
+                            Style="{StaticResource LinkButton}"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"/>
+                        <ScrollView>
+                            <StackLayout    Padding="15">
+                                <Label  Style="{StaticResource CommonText}"
+                                    Text="Ввод формулы броска"/>
+                                <Entry Text="{Binding DiceRollInput, Mode=TwoWay}"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="{Binding Advantage, Mode=TwoWay}"/>
+                                    <Label  Style="{StaticResource CommonText}"
+                                        Text="Преимущество"
+                                        VerticalOptions="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="{Binding Disadvantage, Mode=TwoWay}"/>
+                                    <Label  Style="{StaticResource CommonText}"
+                                        Text="Помеха"
+                                        VerticalOptions="Center"/>
+                                </StackLayout>
+                                <Button Style="{StaticResource DefaultButton}"
+                                    Text="Бросить"
+                                    Command="{Binding RollCommand}"/>
+                                <Label Style="{StaticResource CommonText}"
+                                   Text="{Binding DiceRollResult}"/>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                    
+                    
+                    
+                    
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
